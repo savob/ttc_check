@@ -1,0 +1,19 @@
+Here are the sketches for my previous version of hardware that led to the present ttc_check firmware.
+
+TTC_display - Used to test my code to drive the the seven segment display, namely ESP32 timers.
+              It was previously directly driven from the ESP32 rather than a shift register, which
+              limited the current we could provide the LEDs.
+
+TTCrequestor was my series of sketches that actually got the predictions using the ESP32. Going by 
+version, highlighting the main changes:
+
+V1 - Heavily based on the TinyXML's example for NextBus. Collected predictions and provided them 
+     over serial. Did not have any display related code, focused solely on data collection.
+     
+V2 - Incorperated code to directly drive the seven-segment displays from the ESP32 and show the values.
+
+V3 - Improved the implementation of my debugging features, namely using #ifdef ... #endif to include 
+     debugging code in the compiled binary if "DEBUG_MODE" was defined or not, instead of using "if" 
+     structures. Saves compile time and flash when not debugging.
+     
+V4 - Removed the use of TinyXML, using my own basic parsing function instead to get times.
