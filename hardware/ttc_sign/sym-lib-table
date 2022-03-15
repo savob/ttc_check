@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ttc_sign)(type Legacy)(uri ${KIPRJMOD}/ttc_sign/ttc_sign.lib)(options "")(descr ""))
+)

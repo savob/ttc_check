@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ttc_sign)(type KiCad)(uri ${KIPRJMOD}/ttc_sign/ttc_sign.pretty)(options "")(descr ""))
+)
