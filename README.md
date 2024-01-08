@@ -1,2 +1,3 @@
-# buscheck
-A display to show bus predictions on demand
+# TTC Check
+
+A display to show bus arrival predictions on demand in Toronto using an ESP32.
